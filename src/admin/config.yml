@@ -8,8 +8,13 @@ backend:
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
+
 # Please run "npx netlify-cms-proxy-server" for local backend
-local_backend: true
+local_backend:
+  # when using a custom proxy server port
+  url: http://localhost:8081/api/v1
+  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
+  # allowed_hosts: ['192.168.0.1']
 # publish_mode: editorial_workflow
 collections:
   - label: "Blog"
@@ -30,6 +35,20 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+  - label: "Work"
+    name: "work"
+    folder: "src/works"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Cover", name: "cover", widget: "image" }
+      - {label: "Gallery",
+          name: "galleryImages",
+          widget: "list",
+          summary: '{{fields.image}}',
+          field: {label: Image, name: image, widget: image}}
   - label: "Settings"
     name: "settings"
     editor:
