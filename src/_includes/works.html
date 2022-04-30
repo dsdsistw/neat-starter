@@ -142,7 +142,13 @@ prism: true
         </div>
         <div>
           <p class="text-center">--- {{page.fileSlug | slugify}} ---</p>
-        <p class="text-center">{{description}} </p>
+        <p class="text-center">
+
+{% markdown %}
+  {{description}}
+{% endmarkdown %} </p>
+        
+
       </div>
     </div>
 

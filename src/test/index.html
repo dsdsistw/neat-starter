@@ -1,12 +1,18 @@
----
-layout: blog
-title: My Posts
-pagination:
-  data: collections.work
-  size: 1
-  alias: works
-  addAllPagesToCollections: true
-permalink: "test/{{ works.data.page.fileSlug | slugify }}/index.html"
+---js
+{
+  <!-- layout: "works", -->
+  pagination: {
+    data: "collections.work",
+    size: 1,
+    alias: "works",
+    addAllPagesToCollections: true,
+    before: function(paginationData, fullData) {
+      // `fullData` is new in v1.0.1 and contains the full Data Cascade thus far
+      return paginationData.sort(function(a, b){return b.data.weight - a.data.weight});
+    }
+  },
+  permalink: "test/{{ works.data.page.fileSlug | slugify }}/index.html"
+}
 ---
 <h1>asdf</h1>
 <p>-- {{works.data.page.fileSlug}} --</p>
