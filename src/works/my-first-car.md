@@ -1,5 +1,6 @@
 ---
 title: car
+weight: 0
 cover: /static/img/download.jpeg
 description: >-
   **Extended Object** 

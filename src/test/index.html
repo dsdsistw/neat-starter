@@ -1,0 +1,33 @@
+---
+layout: blog
+title: My Posts
+pagination:
+  data: collections.work
+  size: 1
+  alias: works
+  addAllPagesToCollections: true
+permalink: "test/{{ works.data.page.fileSlug | slugify }}/index.html"
+---
+<h1>asdf</h1>
+<p>-- {{works.data.page.fileSlug}} --</p>
+<h1>{{works.data.title}}</h1>
+<div class="container">
+<div class="grid grid-cols-2">
+{% for img in works.data.galleryImages %}
+      
+      <img src="{{img}}"/>
+    
+{% endfor %} 
+</div>
+</div>
+
+
+
+<nav aria-labelledby="my-pagination">
+  <ol>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+
+  </ol>
+</nav>

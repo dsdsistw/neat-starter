@@ -26,8 +26,9 @@ layout: gallery
     {% set postslist = collections.work %}
 
     {% for post in postslist | reverse %}
-    	<a href="{{ post.url | url }}">
-        <img class="img-cover" data-src="{{post.data.cover}}" />            
+    	<!-- <a href="{{ post.url | url }}"> -->
+            <a href="http://localhost:8080/test/{{ post.data.page.fileSlug | url }}">
+        <img class="img-cover" data-src="{{post.data.cover}}" />   <span></span>        
                 </a>
         
         
