@@ -1,1 +1,1 @@
-src/static/img/car-portrait-display-simple-background-spotlights-wallpaper-preview.jpeg filter=lfs diff=lfs merge=lfs -text
+src/static/img/** filter=lfs diff=lfs merge=lfs -text
