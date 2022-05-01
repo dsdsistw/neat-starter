@@ -1,39 +1,81 @@
 ---js
 {
-  <!-- layout: "works", -->
-  pagination: {
-    data: "collections.work",
-    size: 1,
-    alias: "works",
-    addAllPagesToCollections: true,
-    before: function(paginationData, fullData) {
-      // `fullData` is new in v1.0.1 and contains the full Data Cascade thus far
-      return paginationData.sort(function(a, b){return b.data.weight - a.data.weight});
-    }
-  },
-  permalink: "test/{{ works.data.page.fileSlug | slugify }}/index.html"
+layout: "default",
+pagination: {
+data: "collections.work",
+size: 1,
+alias: "works",
+addAllPagesToCollections: true,
+before: function(paginationData, fullData) {
+// `fullData` is new in v1.0.1 and contains the full Data Cascade thus far
+return paginationData.sort(function(a, b){return b.data.weight - a.data.weight});
+}
+},
+permalink: "test/{{ works.data.page.fileSlug | slugify }}/index.html"
 }
 ---
-<h1>asdf</h1>
-<p>-- {{works.data.page.fileSlug}} --</p>
-<h1>{{works.data.title}}</h1>
-<div class="container">
-<div class="grid grid-cols-2">
-{% for img in works.data.galleryImages %}
-      
-      <img src="{{img}}"/>
-    
-{% endfor %} 
+<style>
+  .img-btn {
+    aspect-ratio: 1/1;
+  }
+</style>
+<div class="grid grid-cols-4">
+
+  <div class="col-span-3">
+    <img id="big-img" src="" class="w-full" />
+  </div>
+  <div class="">
+    <div class="flex flex-auto">
+      <div class="mx-2">
+        {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}">&lt;</a>{% else %}&nbsp;
+        {% endif %}
+      </div>
+      <div class="flex-grow">
+        <div class="grid gap-3 text-gray-500">
+          <div class="text-black">
+            <div class="font-bold border-b-2 border-black text-justify text-xl">
+              {% markdown %}{{ works.data.name1 }}{% endmarkdown %}
+            </div>
+            <div class="font-bold text-justify text-xl">
+              {% markdown %}{{ works.data.name2 }}{% endmarkdown %}
+            </div>
+          </div>
+          <div>
+            {% markdown %}{{ works.data.spec }}{% endmarkdown %}
+          </div>
+          <div class="text-justify grid gap-3">
+            {% markdown %}{{ works.data.description }}{% endmarkdown %}
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            {% for img in works.data.galleryImages %}
+            <a href="javascript:void(0);">
+              <img class="img-btn object-cover" src="{{img}}" />
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="mx-2">
+        {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}">&gt;</a>{% else %}&nbsp;
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
 </div>
-</div>
 
+<script>
+  const btn = document.querySelectorAll(".img-btn");
 
+  btn.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      const src = item.getAttribute("src");
+      document.querySelector("#big-img").setAttribute("src", src);
+    });
+  });
 
-<nav aria-labelledby="my-pagination">
-  <ol>
-    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
-
-    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
-
-  </ol>
-</nav>
+  // init click
+  document.querySelector(".img-btn").click();
+</script>

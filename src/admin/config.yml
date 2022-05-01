@@ -8,7 +8,6 @@ backend:
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
-
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend:
   # when using a custom proxy server port
@@ -41,17 +40,34 @@ collections:
     create: true
     editor:
       preview: false
+    sortable_fields: ["weight", "title"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Weight", name: "weight", widget: "number", default: 1 }
+      - { label: "Name 1", name: "name1", widget: "text", required: false }
+      - { label: "Name 2", name: "name2", widget: "text", required: false }
+      - { label: "Spec", name: "spec", widget: "markdown", required: false }
+      - {
+          label: "Weight",
+          name: "weight",
+          widget: "number",
+          default: 1,
+          required: true,
+        }
       - { label: "Cover", name: "cover", widget: "image" }
-      - { label: "Description", name: "description", widget: "markdown" }
-      - {label: "Gallery",
+      - {
+          label: "Description",
+          name: "description",
+          widget: "markdown",
+          required: false,
+        }
+      - {
+          label: "Gallery",
           name: "galleryImages",
           widget: "list",
           collapsed: false,
-          summary: '{{fields.image}}',
-          field: {label: Image, name: image, widget: image}}
+          summary: "{{fields.image}}",
+          field: { label: Image, name: image, widget: image },
+        }
   - label: "Settings"
     name: "settings"
     editor:

@@ -54,15 +54,24 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  
-  const md = new markdownIt({
-    html: true
+  // Sort by name
+  eleventyConfig.addFilter("sortByWeight", function (values) {
+    return values.sort(function (a, b) {
+      return b.data.weight - a.data.weight;
+    });
   });
 
-  eleventyConfig.addPairedShortcode("markdown", (content) => {
+  // Markdown render HTML
+  const md = new markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+  });
+
+  eleventyConfig.addPairedShortcode("markdown", function (content) {
+    // Method A: ✅ This works fine
     return md.render(content);
   });
-
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
