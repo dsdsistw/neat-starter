@@ -11,7 +11,7 @@ layout: default
         <p><a href="mailto:arts@arts.com">arts@arts.com</a></p>
         <p><a href="https://repfitness.com" target="_blank">REPfitness.com</a></p>
     </div>
-    <form class="my-form" class="w-full" name="contact" action="POST" data-netlify="true">
+    <form class="w-full" name="contact" action="POST" data-netlify="true">
 
         <input class="border-2 mb-3 border-black block w-full" type="text" name="name" placeholder="Your Name" />
 
@@ -39,7 +39,7 @@ layout: default
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        let myForm = document.querySelector(".my-form");
+        let myForm = document.querySelector("form");
         let formData = new FormData(myForm);
         fetch("/", {
             method: "POST",
@@ -58,6 +58,6 @@ layout: default
     };
 
     document
-        .querySelector(".my-form")
+        .querySelector("form")
         .addEventListener("submit", handleSubmit);
 </script>
