@@ -9,5 +9,8 @@ spec: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 weight: 1
 cover: /static/img/businessman-hand-using-america-usa-map-globe-network-hologram.jpg
 galleryImages:
+  - /static/img/businessman-hand-using-america-usa-map-globe-network-hologram.jpg
   - /static/img/2109_m10_i003_n006.jpg
+  - /static/img/27959.jpg
+  - /static/img/1198.jpg
 ---
