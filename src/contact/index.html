@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-
-
 <div class="grid grid-cols-2">
     <div>
         <h1 class="inline-block text-left border-b-2 border-black">Contact</h1>
@@ -13,7 +11,7 @@ layout: default
         <p><a href="mailto:arts@arts.com">arts@arts.com</a></p>
         <p><a href="https://repfitness.com" target="_blank">REPfitness.com</a></p>
     </div>
-    <form class="w-full" name="contact" action="POST" data-netlify="true">
+    <form class="my-form" class="w-full" name="contact" action="POST" data-netlify="true">
 
         <input class="border-2 mb-3 border-black block w-full" type="text" name="name" placeholder="Your Name" />
 
@@ -24,4 +22,42 @@ layout: default
         <button type="submit" class="block ml-auto">Send</button>
 
     </form>
+    <div class="hidden post-sent">
+        <img class="w-32 mx-auto"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Eo_circle_green_checkmark.svg/1024px-Eo_circle_green_checkmark.svg.png?20200417132424"
+            alt="">
+        <h3 class="text-center">Thank you for your message. <br>It has been sent.</h3>
+    </div>
+    <div class="hidden post-error">
+        <img class="w-32 mx-auto" src="https://cdn0.iconfinder.com/data/icons/shift-free/32/Error-1024.png" alt="">
+        <h3 class="text-center">An Error occurred while sending the message, please try again later.</h3>
+    </div>
 </div>
+
+<script>
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        let myForm = document.querySelector(".my-form");
+        let formData = new FormData(myForm);
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => {
+                console.log("Form successfully submitted");
+                myForm.classList.add('hidden');
+                document.querySelector(".post-sent").classList.remove("hidden")
+            })
+            .catch((error) => {
+                myForm.classList.add("hidden");
+                document.querySelector(".post-error").classList.remove("hidden");
+            });
+    };
+
+    document
+        .querySelector(".my-form")
+        .addEventListener("submit", handleSubmit);
+</script>
