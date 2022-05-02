@@ -1,5 +1,5 @@
 ---
-title: mazda 2
+title: mazda 2 2022
 name1: Mazda 2
 name2: Mazda 2
 spec: |-
