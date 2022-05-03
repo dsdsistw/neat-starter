@@ -6,7 +6,7 @@ spec: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
   cillum dolore eu
-weight: 1
+weight: 100
 cover: /static/img/businessman-hand-using-america-usa-map-globe-network-hologram.jpg
 galleryImages:
   - /static/img/businessman-hand-using-america-usa-map-globe-network-hologram.jpg
