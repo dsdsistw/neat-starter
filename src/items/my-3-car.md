@@ -36,5 +36,4 @@ galleryImages:
   - https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/hero_banner/2022/04_12/hura_slide_01_m.jpg
   - https://cdn.motor1.com/images/mgl/6MGkl/s1/bugatti-chiron-pur-sport.webp
   - https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-c4a9cdcf0a58353aa5323d397bde7f34.jpg
-  - /static/img/d3dff9a5bcf08204108548ea6028fa24.jpeg
 ---
