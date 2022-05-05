@@ -8,7 +8,11 @@ alias: "works",
 addAllPagesToCollections: true,
 before: function(paginationData, fullData) {
 // `fullData` is new in v1.0.1 and contains the full Data Cascade thus far
-return paginationData.sort(function(a, b){return b.data.weight - a.data.weight});
+return paginationData.sort(function(a, b){console.log(a.data.title, "|", b.data.title);return (
+b.data.weight - a.data.weight ||
+a.data.title.localeCompare(b.data.title)
+);
+});
 }
 },
 permalink: "works/{{ works.data.page.fileSlug | slugify }}/index.html",

@@ -23,6 +23,7 @@ collections:
     editor:
       preview: false
     sortable_fields: ["weight", "title"]
+    summary: "{{title}} - ({{weight}})"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Name 1", name: "name1", widget: "text", required: false }
@@ -55,30 +56,6 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Navigation"
-        name: "items"
-        file: "src/_data/navigation.yaml"
-        fields:
-          - label: Nav Items
-            name: items
-            widget: list
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
-      - label: "Quick Links"
-        name: "links"
-        file: "src/_data/quicklinks.yaml"
-        fields:
-          - label: Nav Items
-            name: links
-            widget: list
-            collapsed: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: URL, name: url, widget: string }
-              - { label: Description, name: desc, widget: string }
       - label: "Meta Settings"
         name: "settings"
         file: "src/_data/settings.json"

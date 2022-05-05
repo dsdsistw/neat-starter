@@ -60,7 +60,10 @@ module.exports = function (eleventyConfig) {
   // Sort by name
   eleventyConfig.addFilter("sortByWeight", function (values) {
     return values.sort(function (a, b) {
-      return b.data.weight - a.data.weight;
+      return (
+        b.data.weight - a.data.weight ||
+        a.data.title.localeCompare(b.data.title)
+      );
     });
   });
 
