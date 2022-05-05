@@ -1,25 +1,52 @@
 ---
 layout: default
 ---
-<div class="grid grid-cols-2">
+<h1 class="inline-block text-left border-b-2 pb-3 mb-5 border-black tracking-wider font-bold text-6xl">Contact</h1>
+<div class="grid md:grid-cols-2">
     <div>
-        <h1 class="inline-block text-left border-b-2 border-black">Contact</h1>
-        <p>+852 2122 6578</p>
-        <p>+852 6211 1234 (We alsow support WhatsApp!)<br>(Opening Hours: Mon - Sun 11:00-21:00)</p>
-        <p>+852 5432 4664<br>
-            (Service Hours: Mon - Fri 10:00-19:00)</p>
-        <p><a href="mailto:arts@arts.com">arts@arts.com</a></p>
-        <p><a href="https://repfitness.com" target="_blank">REPfitness.com</a></p>
+        <div class="flex mb-5 items-center">
+            <div class="mr-3"><img src="/static/img/contact_phone.png" alt=""></div>
+            <span><a href="tel:21226578">+852 2122 6578</a></span>
+        </div>
+        <div class="flex mb-5">
+            <div class="mr-3"><img src="/static/img/contact_wts.png" alt=""></div>
+            <span><a href="tel:62111234">+852 6211 1234</a> (We alsow support WhatsApp!)<br>(Opening Hours: Mon - Sun
+                11:00-21:00)</span>
+        </div>
+        <div class="flex mb-5">
+            <div class="mr-3"><img src="/static/img/contact_question.png" alt=""></div>
+            <span><a href="tel:54324664">+852 5432 4664</a><br>
+                (Service Hours: Mon - Fri 10:00-19:00)</span>
+        </div>
+        <div class="flex mb-5 items-center">
+            <div class="mr-3"><img src="/static/img/contact_email.png" alt=""></div>
+            <p><a href="mailto:arts@arts.com">arts@arts.com</a></p>
+        </div>
+        <div class="flex mb-5 items-center">
+            <div class="mr-3"><img src="/static/img/contact_website.png" alt=""></div>
+            <a href="https://repfitness.com" target="_blank">REPfitness.com</a>
+        </div>
+
+
+
+
     </div>
     <form class="w-full" name="contact" action="POST" data-netlify="true">
 
-        <input class="border-2 mb-3 border-black block w-full" type="text" name="name" placeholder="Your Name" />
+        <div class="px-2 py-1 border-1 mb-3 border-black">
+            <input class="block w-full" type="text" name="name" placeholder="Name" />
+        </div>
 
-        <input class="border-2 mb-3 border-black block w-full" type="email" name="email" placeholder="Your Email" />
+        <div class="px-2 py-1 border-1 mb-3 border-black"><input class="block w-full" type="email" name="email"
+                placeholder="Email" />
+        </div>
 
-        <textarea name="message" placeholder="Message" class="border-2 mb-3 border-black block w-full h-24"></textarea>
+        <div class="px-2 py-1 border-1 mb-3 border-black"><textarea name="message"
+                placeholder="Please feel free to contact us should you have any inquiries."
+                class="block w-full h-24"></textarea>
+        </div>
 
-        <button type="submit" class="block ml-auto">Send</button>
+        <button type="submit" class="block ml-auto bg-black px-8 py-1 text-white">Send</button>
 
     </form>
     <div class="hidden post-sent">

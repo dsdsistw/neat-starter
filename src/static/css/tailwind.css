@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 /*Your Custom CSS Goes here*/
+html, body {
+  font-size: 14px;
+}
 
 h1 {
   @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
@@ -17,4 +23,8 @@ h3 {
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
+}
+
+.border-1 {
+  border-width: 1px;
 }

@@ -6,6 +6,9 @@ module.exports = {
     },
     extend: {
       colors: {},
+      fontFamily: {
+        Lato: ["Lato"],
+      },
     },
   },
   variants: {},
