@@ -6,30 +6,18 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    {{title}}
+    {{ title or settings.meta_title }}
   </title>
-  {% if description %}
-  <meta name="description" content="{{description}}" />
-  {% endif %}
+  <meta name="description" content="{{description or settings.meta_description }}" />
   {% block head %}{% endblock %}
   <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
   {% if prism == true %}
   <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
   {% endif %}
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
-
-    html,
-    body {
-      font-family: 'Lato', sans-serif !important;
-    }
-  </style>
 </head>
 
 <body>
   {% include "./partials/navbar.html" %}
-
   <div class="container max-w-5xl p-9">
     {{ content | safe }}
   </div>

@@ -5,7 +5,7 @@ backend:
   ### enable below lines for github integration ###
   # name: github
   # repo: surjithctly/neat-starter
-media_folder: "src/static/img"
+media_folder: "src/static/img/uploads"
 public_folder: "/static/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
@@ -16,24 +16,6 @@ local_backend:
   # allowed_hosts: ['192.168.0.1']
 # publish_mode: editorial_workflow
 collections:
-  # - label: "Blog"
-  #   name: "blog"
-  #   folder: "src/posts"
-  #   create: true
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Description", name: "description", widget: "string" }
-  #     - { label: "Author", name: "author", widget: "string" }
-  #     - { label: "Publish Date", name: "date", widget: "datetime" }
-  #     - { label: "Body", name: "body", widget: "markdown" }
-  #     - widget: select
-  #       label: "tags"
-  #       name: "tags"
-  #       multiple: true
-  #       create: true
-  #       options: ["Tags", "created", "from", "config.yml"]
   - label: "Work"
     name: "work"
     folder: "src/works"
@@ -99,8 +81,7 @@ collections:
               - { label: Description, name: desc, widget: string }
       - label: "Meta Settings"
         name: "settings"
-        file: "src/_data/settings.yaml"
+        file: "src/_data/settings.json"
         fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Author, name: author, widget: string }
-          - { label: URL, name: url, widget: string }
+          - { label: Meta_Title, name: meta_title, widget: string }
+          - { label: Meta_Description, name: meta_description, widget: string }

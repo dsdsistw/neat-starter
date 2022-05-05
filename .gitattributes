@@ -1,1 +1,1 @@
-src/static/img/** filter=lfs diff=lfs merge=lfs -text
+src/static/img/uploads/** filter=lfs diff=lfs merge=lfs -text

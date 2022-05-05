@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Gallery
 ---
 
 <style>
@@ -36,9 +37,7 @@ layout: default
     shuffledArray.map((element, index) => {
       if (!element.isIntersecting) return;
       observer.unobserve(element.target);
-      console.log(index);
       setTimeout(() => {
-        console.log(element.target.getAttribute("data-src"));
         element.target.setAttribute(
           "src",
           element.target.getAttribute("data-src")

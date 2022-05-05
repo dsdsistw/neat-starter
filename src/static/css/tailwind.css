@@ -8,21 +8,7 @@
 /*Your Custom CSS Goes here*/
 html, body {
   font-size: 14px;
-}
-
-h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
-}
-
-h3 {
-  @apply text-2xl font-bold mb-3;
-}
-
-/* Syntax Highlighting*/
-
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  @apply bg-gray-800;
+  font-family: 'Lato', sans-serif; 
 }
 
 .border-1 {

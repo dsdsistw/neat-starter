@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Contact Us
 ---
 <h1 class="inline-block text-left border-b-2 pb-3 mb-5 border-black tracking-wider font-bold text-6xl">Contact</h1>
 <div class="grid md:grid-cols-2">
@@ -34,14 +35,14 @@ layout: default
     <form class="w-full" name="contact" action="POST" data-netlify="true">
 
         <div class="px-2 py-1 border-1 mb-3 border-black">
-            <input class="block w-full" type="text" name="name" placeholder="Name" />
+            <input required class="block w-full" type="text" name="name" placeholder="Name" />
         </div>
 
-        <div class="px-2 py-1 border-1 mb-3 border-black"><input class="block w-full" type="email" name="email"
+        <div class="px-2 py-1 border-1 mb-3 border-black"><input required class="block w-full" type="email" name="email"
                 placeholder="Email" />
         </div>
 
-        <div class="px-2 py-1 border-1 mb-3 border-black"><textarea name="message"
+        <div class="px-2 py-1 border-1 mb-3 border-black"><textarea required name="message"
                 placeholder="Please feel free to contact us should you have any inquiries."
                 class="block w-full h-24"></textarea>
         </div>
@@ -61,30 +62,4 @@ layout: default
     </div>
 </div>
 
-<script>
-
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        let myForm = document.querySelector("form");
-        let formData = new FormData(myForm);
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-        })
-            .then(() => {
-                console.log("Form successfully submitted");
-                myForm.classList.add('hidden');
-                document.querySelector(".post-sent").classList.remove("hidden")
-            })
-            .catch((error) => {
-                myForm.classList.add("hidden");
-                document.querySelector(".post-error").classList.remove("hidden");
-            });
-    };
-
-    document
-        .querySelector("form")
-        .addEventListener("submit", handleSubmit);
-</script>
+<script src="/static/js/form.js"></script>

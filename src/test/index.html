@@ -11,7 +11,10 @@ before: function(paginationData, fullData) {
 return paginationData.sort(function(a, b){return b.data.weight - a.data.weight});
 }
 },
-permalink: "test/{{ works.data.page.fileSlug | slugify }}/index.html"
+permalink: "test/{{ works.data.page.fileSlug | slugify }}/index.html",
+eleventyComputed: {
+title: "{{ works.data.weight }}"
+}
 }
 ---
 <style>
