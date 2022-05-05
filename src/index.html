@@ -1,25 +1,27 @@
 ---
 layout: default
-title: Neat Starter
-path: home
+title: Gallery
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+<style>
+  .img-cover {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+  }
+</style>
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
+<div class="grid grid-cols-3 md:grid-cols-5 gap-6">
+  {% set postslist = collections.work | sortByWeight %}
 
-  <!-- {% include "./_includes/partials/content.html" %} -->
+  {% for post in postslist %}
+  <a href="/works/{{ post.data.page.fileSlug | url }}">
+    <img class="img-cover object-cover" data-src="{{post.data.cover}}" />
+
+    <span class="hidden">-- {{post.data.weight}}</span>
+  </a>
+  {% endfor %}
 </div>
+
+
+<script src="/static/js/gallery.js"></script>

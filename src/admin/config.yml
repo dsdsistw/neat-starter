@@ -18,7 +18,7 @@ local_backend:
 collections:
   - label: "Work"
     name: "work"
-    folder: "src/works"
+    folder: "src/items"
     create: true
     editor:
       preview: false
