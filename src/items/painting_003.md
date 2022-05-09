@@ -41,4 +41,6 @@ description: "Taking precedence over other colours, red emerges as the most
   瓊女士、許晉亨先生、胡吳婉芳女士致謝，感謝他們百忙中抽空讓他為他們繪畫肖像。\r\n"
 galleryImages:
   - /static/img/uploads/painting_0003.jpg
+  - /static/img/uploads/painting_0003_1.jpg
+  - /static/img/uploads/painting_0003_2.jpg
 ---
