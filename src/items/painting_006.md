@@ -13,8 +13,8 @@ spec: "81.3 x 96.5cm\r
 
   (Details 局部)\r\n"
 weight: 1
-cover: /static/img/uploads/thum_painting_0008.jpg
+cover: /static/img/uploads/thum_painting_0006.jpg
 description: ""
 galleryImages:
-  - /static/img/uploads/painting_0008.jpg
+  - /static/img/uploads/painting_0006.jpg
 ---
