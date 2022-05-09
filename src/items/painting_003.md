@@ -12,7 +12,7 @@ spec: "81.3 x 96.5cm\r
 
   (Details 局部)\r\n"
 weight: 1
-cover: /static/img/uploads/thum_painting_0002.jpg
+cover: /static/img/uploads/thum_painting_0003.jpg
 description: "Taking precedence over other colours, red emerges as the most
   fitting in presenting Lynus's sitters in this series of portraits he has begun
   painting since 2015. The people depicted have known him since he was a child
@@ -40,5 +40,5 @@ description: "Taking precedence over other colours, red emerges as the most
   肖像都是薦予他們的信，表達了藝術家對他們無私的愛與忠誠的欽佩和敬意。胡智同希望藉此機會向董建華先生、何厚鏵先生、李國能先生、胡寶星先生及胡方雪芬女士、何超\
   瓊女士、許晉亨先生、胡吳婉芳女士致謝，感謝他們百忙中抽空讓他為他們繪畫肖像。\r\n"
 galleryImages:
-  - /static/img/uploads/painting_0002.jpg
+  - /static/img/uploads/painting_0003.jpg
 ---
