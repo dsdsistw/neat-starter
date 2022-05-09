@@ -1,5 +1,5 @@
 ---
-title: data_002
+title: painting_002
 name1: |-
   ~700 nanometers
   《 ~700 納米》
