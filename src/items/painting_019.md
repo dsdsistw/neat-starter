@@ -2,7 +2,7 @@
 title: painting_019
 name1: |-
   The Broken Series, 2019–2020
-  《 破碎系列》
+  《破碎系列》
 name2: Self Reflection III
 spec: "Acrylic & mixed media on canvas (scotch tape)\r
 
