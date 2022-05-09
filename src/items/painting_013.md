@@ -2,7 +2,7 @@
 title: painting_013
 name1: |
   Confrontation Between the Painter and Colour, 2019
-  《 畫家與色彩的對峙》
+  《畫家與色彩的對峙》
 name2: ""
 spec: "76 x 76cm\r\nOil on canvas 油彩畫布\r\n"
 weight: 1
@@ -44,4 +44,6 @@ description: "This section brings together three selfportraits painted from a
   變與脆弱是否可以忠實呈現在畫家的筆下。\r\n"
 galleryImages:
   - /static/img/uploads/painting_0013.jpg
+  - /static/img/uploads/painting_0013_1.jpg
+  - /static/img/uploads/painting_0013_2.jpg
 ---
