@@ -1,6 +1,8 @@
 ---
 title: data_002
-name1: ~700 nanometers 《 ~700 納米》
+name1: |-
+  ~700 nanometers
+  《 ~700 納米》
 name2: |-
   The Hon Tung Chee Hwa, GBM, 2017
   董建華先生 大紫荊勳賢
