@@ -35,4 +35,6 @@ description: "While vibrant palettes dominate Lynus's oeuvre, he also
    \r\n"
 galleryImages:
   - /static/img/uploads/painting_0020.jpg
+  - /static/img/uploads/painting_0019_1.jpg
+  - /static/img/uploads/painting_0019_2.jpg
 ---
