@@ -30,4 +30,6 @@ description: "Jenny Saville's influence on the visceral quality of Lynus's
   胡智同描述道，所有的綠調彷彿進行了自我調整，以分別配合突出畫中人的喜悅、沉思和淡漠。\r\n"
 galleryImages:
   - /static/img/uploads/painting_0010.jpg
+  - /static/img/uploads/painting_0010_2.jpg
+  - /static/img/uploads/painting_0010_1.jpg
 ---
