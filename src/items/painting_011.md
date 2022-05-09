@@ -1,9 +1,9 @@
 ---
 title: painting_011
-name1: Helene II
-name2: |-
+name1: |-
   Colours and the Human Psyche, 2022
   《 色彩與心理狀態》
+name2: Helene II
 spec: "77 x 102cm\r
 
   Oil on canvas 油彩畫布\r
