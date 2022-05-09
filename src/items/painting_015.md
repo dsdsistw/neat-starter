@@ -2,7 +2,7 @@
 title: painting_015
 name1: |
   Confrontation Between the Painter and Colour, 2019
-  《 畫家與色彩的對峙》
+  《畫家與色彩的對峙》
 name2: ""
 spec: "76 x 76cm\r\nOil on canvas 油彩畫布\r\n"
 weight: 1
