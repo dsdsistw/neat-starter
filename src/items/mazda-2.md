@@ -3,13 +3,13 @@ title: painting_001
 name1: |-
   ~700 nanometers
   《 ~700 納米》
-name2: |
+name2: |-
+  Mr. Julian Hui, 2017
+  許晉亨先生
+spec: |
   81.3 x 96.5cm
   Oil on canvas 油彩畫布
   (Details 局部)
-spec: |
-  Mr. Julian Hui, 2017
-  許晉亨先生
 weight: 1
 cover: /static/img/uploads/thum_painting_0001.jpg
 description: >-
