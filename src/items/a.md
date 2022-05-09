@@ -11,7 +11,7 @@ spec: |-
   Oil on canvas 油彩畫布
   (Details 局部)
 weight: 1
-cover: /static/img/uploads/thum_painting_0004.jpg
+cover: /static/img/uploads/thum_painting_0002.jpg
 description: >-
   How Albers passionately discussed the relative influences of colours towards
   each other and the viewer as if colours could 'behave' and 'act' in an
@@ -27,5 +27,5 @@ description: >-
 
   為了深入探討，胡智同很自然的以紅色為始點開展了他的巡禮。紅色在各個方面都是最遠古而重要的三原色之一。它是人類可見光譜中波長最長的顏色，是嬰兒繼黑白後能辨識的第一種顏色，是史前洞穴壁畫中最早廣泛使用的顏色，也是最能與人的血肉相聯的顏色。總而言之，紅色堪稱生命和始源的一種視覺體現。
 galleryImages:
-  - /static/img/uploads/painting_0004.jpg
+  - /static/img/uploads/painting_0002.jpg
 ---
