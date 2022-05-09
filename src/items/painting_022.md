@@ -14,4 +14,6 @@ cover: /static/img/uploads/thum_painting_0022.jpg
 description: ""
 galleryImages:
   - /static/img/uploads/painting_0022.jpg
+  - /static/img/uploads/painting_0021_1.jpg
+  - /static/img/uploads/painting_0021_2.jpg
 ---
