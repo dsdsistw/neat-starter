@@ -12,8 +12,8 @@ spec: "152 x 122cm\r
 
   \n"
 weight: 1
-cover: /static/img/uploads/thum_painting_0029.jpg
+cover: /static/img/uploads/thum_painting_0009.jpg
 description: ""
 galleryImages:
-  - /static/img/uploads/painting_0029.jpg
+  - /static/img/uploads/painting_0009.jpg
 ---
