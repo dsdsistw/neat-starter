@@ -55,4 +55,7 @@ description: "ynus soon moved beyond any attempts of realistic representation
   託予色彩，在其引導下於畫布上縱心揮毫。縱橫交錯的色彩有如藝術家嘗試梳理整合的一絲絲思緒，讓他的創作之旅成為一個進行內觀且洗滌身心的細膩過程。\r\n"
 galleryImages:
   - /static/img/uploads/painting_0016.jpg
+  - /static/img/uploads/painting_0016_1.jpg
+  - /static/img/uploads/painting_0016_2.jpg
+  - /static/img/uploads/painting_0016_3.jpg
 ---
