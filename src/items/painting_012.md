@@ -2,7 +2,7 @@
 title: painting_012
 name1: |-
   Colours and the Human Psyche, 2022
-  《 色彩與心理狀態》
+  《色彩與心理狀態》
 name2: Helene III
 spec: "77 x 102cm\r
 
